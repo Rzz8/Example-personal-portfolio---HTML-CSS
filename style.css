@@ -162,7 +162,6 @@ about img {
 .about-text p {
   color: #fcfc;
   letter-spacing: 1px;
-  list-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
 }
@@ -217,19 +216,19 @@ button:hover {
   margin: 0px 20px;
   border: #000;
   border-radius: 30px;
+  text-align: center;
 }
 
 .servicecontent1 h5 {
   font-size: 25px;
   color: white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .servicecontent1 p {
   color: #fcfc;
   letter-spacing: 1px;
-  list-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
   text-align: center;
@@ -244,7 +243,7 @@ button:hover {
   padding: 13px 30px;
   border-radius: 30px;
   transition: 0.4s;
-  margin-left: 90px;
+  margin-left: 0px;
 }
 
 button:hover {
@@ -293,16 +292,22 @@ button:hover {
 }
 
 .contact {
-  background-color: #101010;
-  width: 100%;
-  padding: 100px 0px;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  text-align: center;
 }
 
 .main4 {
   width: 530px;
   max-width: 90%;
-  margin: 0 auto;
-  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 }
 
 .main4 h3{
@@ -312,26 +317,29 @@ button:hover {
 
 .main4 h5{
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
-  margin: 50px;
 }
 
-.main4 button {
-  background-color: #f9004d;
-  color: white;
-  text-decoration: none;
-  border: 2px solid #f9004d;
-  font-weight: bold;
-  padding: 13px 30px;
-  border-radius: 30px;
-  transition: 0.4s;
-  margin-left: 35px;
-}
 
-button:hover {
-  background-color: transparent;
-  border: 2px solid #f9004d;
-  cursor: pointer;
-  text-transform: capitalize;
+.social{
+	display: flex;
+  padding-left: 162px;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
 }
